@@ -70,7 +70,7 @@
     "@material-ui/styles": "^4.11.5",
     "@sentry/browser": "^5.15.4",
     "acorn": "^7.1.1",
-    "axios": "^0.19.2",
+    "axios": "^1.8.4",
     "classnames": "^2.2.6",
     "cross-env": "^7.0.2",
     "date-fns": "^2.12.0",
