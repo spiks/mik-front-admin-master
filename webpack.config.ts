@@ -92,8 +92,8 @@ const configuration: Configuration = {
         contentBase: path.resolve(__dirname, 'public'),
         historyApiFallback: true,
         compress: true,
-        port: 9000,
-        host: '0.0.0.0',
+        port: 9001,
+        host: 'localhost',
         watchContentBase: true
     },
     mode: env,
