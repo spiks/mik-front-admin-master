@@ -1,0 +1,35 @@
+@import "~common/styles/common/_variables";
+
+.editor {
+  border: 1px solid $shade-30;
+  border-radius: 4px;
+  padding: 18.5px 14px;
+  //color: rgba(0, 0, 0, 0.87);
+  min-height: 150px;
+  max-height: 450px;
+  cursor: text;
+
+  &:hover {
+    border-color: rgba(0, 0, 0, 0.87);
+  }
+
+  &.focused {
+    border: 2px solid $primary-900;
+    padding: 17.5px 13px;
+  }
+
+  &.error {
+    border: 2px solid $red-900;
+    padding: 17.5px 13px;
+  }
+}
+
+:global {
+  .public-DraftEditorPlaceholder-root {
+    color: #A9A9A9;
+  }
+
+  .rdw-option-wrapper {
+    padding: 15px;
+  }
+}

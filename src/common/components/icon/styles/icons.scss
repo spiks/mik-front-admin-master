@@ -1,0 +1,23 @@
+@import "~common/styles/common/_variables";
+
+.icon-edit, .icon-close, .icon-copy {
+  path {
+    transition: 0.1s all ease-in-out;
+  }
+}
+
+.icon-edit, .icon-copy {
+  margin-right: 16px;
+
+  &:hover {
+    path {
+      fill: $primary-900;
+    }
+  }
+}
+
+.icon-close:hover {
+  path {
+    fill: $red-900;
+  }
+}

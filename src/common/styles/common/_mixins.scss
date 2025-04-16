@@ -1,0 +1,351 @@
+/* ===== Mixins ===== */
+
+@mixin min-width($width) {
+  @media screen and (min-width: $width + px) {
+    @content;
+  }
+}
+
+@mixin max-width($width) {
+  @media screen and (max-width: $width - 1 + px) {
+    @content;
+  }
+}
+
+@mixin max-height($height) {
+  @media screen and (max-height: $height - 1 + px) {
+    @content;
+  }
+}
+
+@mixin media-width($min-width, $max-width) {
+  @media screen and (min-width: $min-width + px) and (max-width: $max-width - 1 + px) {
+    @content;
+  }
+}
+
+@mixin from-screen-size($screen) {
+  @if map-get($screen-sizes, $screen) != 0 {
+    @include min-width(map-get($screen-sizes, $screen)) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin upto-screen-size($screen) {
+  @if map-get($screen-sizes, $screen) != 0 {
+    @include max-width(map-get($screen-sizes, $screen)) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin arrow($width, $height, $bg, $direction) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  @if ($direction == t) {
+    border-width: 0 $width / 2 + px $height + px $width / 2 + px;
+    border-color: transparent transparent $bg transparent;
+  }
+  @if ($direction == r) {
+    border-width: $height / 2 + px 0 $height / 2 + px $width + px;
+    border-color: transparent transparent transparent $bg;
+  }
+  @if ($direction == b) {
+    border-width: $height + px $width / 2 + px 0 $width / 2 + px;
+    border-color: $bg transparent transparent transparent;
+  }
+  @if ($direction == l) {
+    border-width: $height / 2 + px $width + px $height / 2 + px 0;
+    border-color: transparent $bg transparent transparent;
+  }
+  @if ($direction == tl) {
+    border-width: $height + px $width + px 0 0;
+    border-color: $bg transparent transparent transparent;
+  }
+  @if ($direction == tr) {
+    border-width: 0 $width + px $height + px 0;
+    border-color: transparent $bg transparent transparent;
+  }
+  @if ($direction == br) {
+    border-width: 0 0 $height + px $width + px;
+    border-color: transparent transparent $bg transparent;
+  }
+  @if ($direction == bl) {
+    border-width: $height + px 0 0 $width + px;
+    border-color: transparent transparent transparent $bg;
+  }
+}
+
+@mixin svg($icon, $color) {
+  background: url("../icons/symbol/svg/sprite.symbol.svg#" + $icon) no-repeat;
+  background-size: 100% auto;
+  fill: $color;
+}
+
+@mixin placeholder() {
+  &:-ms-input-placeholder {
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &::-moz-placeholder {
+    @content
+  }
+  &::-webkit-input-placeholder {
+    @content
+  }
+  &::placeholder {
+    @content
+  }
+}
+
+@mixin margin($value) {
+  $top: nth($value, 1);
+  $right: 0;
+  $bottom: 0;
+  $left: 0;
+
+  @if length($value) == 1 {
+    $bottom: $top;
+    $left: $top;
+    $right: $top;
+  } @else if length($value) == 2 {
+    $bottom: $top;
+    $right: nth($value, 2);
+    $left: $right;
+  } @else if length($value) == 3 {
+    $right: nth($value, 2);
+    $bottom: nth($value, 3);
+    $left: $right;
+  } @else {
+    $right: nth($value, 2);
+    $bottom: nth($value, 3);
+    $left: nth($value, 4);
+  }
+
+  [dir=ltr] & {
+    margin: $top $right $bottom $left;
+  }
+  [dir=rtl] & {
+    margin: $top $left $bottom $right;
+  }
+}
+
+@mixin margin-left($number) {
+  [dir=ltr] & {
+    margin-left: $number;
+  }
+  [dir=rtl] & {
+    margin-right: $number;
+  }
+}
+
+@mixin margin-right($number) {
+  [dir=ltr] & {
+    margin-right: $number;
+  }
+  [dir=rtl] & {
+    margin-left: $number;
+  }
+}
+
+@mixin padding($value) {
+  $top: nth($value, 1);
+  $right: 0;
+  $bottom: 0;
+  $left: 0;
+
+  @if length($value) == 1 {
+    $bottom: $top;
+    $left: $top;
+    $right: $top;
+  } @else if length($value) == 2 {
+    $bottom: $top;
+    $right: nth($value, 2);
+    $left: $right;
+  } @else if length($value) == 3 {
+    $right: nth($value, 2);
+    $bottom: nth($value, 3);
+    $left: $right;
+  } @else {
+    $right: nth($value, 2);
+    $bottom: nth($value, 3);
+    $left: nth($value, 4);
+  }
+
+  [dir=ltr] & {
+    padding: $top $right $bottom $left;
+  }
+  [dir=rtl] & {
+    padding: $top $left $bottom $right;
+  }
+}
+
+@mixin padding-left($number) {
+  [dir=ltr] & {
+    padding-left: $number;
+  }
+  [dir=rtl] & {
+    padding-right: $number;
+  }
+}
+
+@mixin padding-right($number) {
+  [dir=ltr] & {
+    padding-right: $number;
+  }
+  [dir=rtl] & {
+    padding-left: $number;
+  }
+}
+
+@mixin text-left() {
+  [dir=ltr] & {
+    text-align: left;
+  }
+  [dir=rtl] & {
+    text-align: right;
+  }
+}
+
+@mixin text-right() {
+  [dir=ltr] & {
+    text-align: right;
+  }
+  [dir=rtl] & {
+    text-align: left;
+  }
+}
+
+@mixin right($number) {
+  [dir=ltr] & {
+    right: $number;
+  }
+  [dir=rtl] & {
+    left: $number;
+  }
+}
+
+@mixin left($number) {
+  [dir=ltr] & {
+    left: $number;
+  }
+  [dir=rtl] & {
+    right: $number;
+  }
+}
+
+@mixin border-right($value) {
+  [dir=ltr] & {
+    border-right: $value;
+  }
+  [dir=rtl] & {
+    border-left: $value;
+  }
+}
+
+@mixin border-left($value) {
+  [dir=ltr] & {
+    border-left: $value;
+  }
+  [dir=rtl] & {
+    border-right: $value;
+  }
+}
+
+@mixin justify-content($value) {
+  [dir=ltr] & {
+    justify-content: $value;
+  }
+  [dir=rtl] & {
+    @if $value == 'flex-start' {
+      justify-content: flex-end;
+    } @else if $value == 'flex-end' {
+      justify-content: flex-start;
+    } @else {
+      justify-content: $value;
+    }
+  }
+}
+
+@mixin float($value) {
+  [dir=ltr] & {
+    float: $value;
+  }
+  [dir=rtl] & {
+    @if $value == 'right' {
+      float: left;
+    } @else if $value == 'left' {
+      float: right;
+    } @else {
+      float: $value;
+    }
+  }
+}
+
+@mixin align-items($value) {
+  [dir=ltr] & {
+    align-items: $value;
+  }
+  [dir=rtl] & {
+    @if $value == 'flex-start' {
+      align-items: flex-end;
+    } @else if $value == 'flex-end' {
+      align-items: flex-start;
+    } @else {
+      align-items: $value;
+    }
+  }
+}
+
+@mixin border-radius($value) {
+  $topLeft: nth($value, 1);
+  $topRight: 0;
+  $bottomRight: 0;
+  $bottomLeft: 0;
+
+  @if length($value) == 1 {
+    $bottomRight: $topLeft;
+    $bottomLeft: $topLeft;
+    $topRight: $topLeft;
+  } @else if length($value) == 2 {
+    $bottomRight: $topLeft;
+    $topRight: nth($value, 2);
+    $bottomLeft: $topRight;
+  } @else if length($value) == 3 {
+    $topRight: nth($value, 2);
+    $bottomRight: nth($value, 3);
+    $bottomLeft: $topRight;
+  } @else {
+    $topRight: nth($value, 2);
+    $bottomRight: nth($value, 3);
+    $bottomLeft: nth($value, 4);
+  }
+
+  [dir=ltr] & {
+    border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+  }
+  [dir=rtl] & {
+    @if $topLeft == 0 and $topRight == 0 {
+      border-radius: $bottomLeft $bottomRight $topLeft $topRight;
+    } @else {
+      border-radius: $topRight $topLeft $bottomLeft $bottomRight;
+    }
+  }
+}
+
+@mixin transform-translate($tx, $ty: 0) {
+  [dir=ltr] & {
+    transform: translate($tx, $ty);
+  }
+  [dir=rtl] & {
+    transform: translate($tx * -1, $ty);
+  }
+}

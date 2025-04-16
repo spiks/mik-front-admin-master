@@ -1,0 +1,23 @@
+@import "~common/styles/common/_variables";
+
+.btn-add {
+  margin-bottom: 48px;
+}
+
+.grid {
+  grid-row-gap: 40px;
+  grid-column-gap: 21px;
+  grid-auto-rows: 56px;
+}
+
+.input {
+  margin: 0
+}
+
+.request-count {
+  margin: auto;
+
+  span {
+    color: $primary-900
+  }
+}

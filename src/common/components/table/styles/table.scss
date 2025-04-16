@@ -1,0 +1,89 @@
+@import '~common/styles/common/_variables';
+
+.table {
+  width: 100%;
+}
+
+.header-row {
+  position: relative;
+  padding: 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    width: 100%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: $shade-20;
+    display: block;
+  }
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: auto;
+  position: relative;
+  padding: 0;
+  min-height: 150px;
+}
+
+.body-row {
+  border-radius: 4px;
+  transition: .2s ease-in-out;
+  border: 1px solid transparent;
+
+  &:nth-child(even) {
+    background-color: $primary-300;
+  }
+
+  //&:hover {
+  //  background-color: $primary-500;
+  //}
+}
+
+.table-cell {
+  padding: 24px 20px;
+  word-break: break-word;
+}
+
+.sort-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.sort-container {
+  width: 100%;
+}
+
+.sortable {
+  transition: background .3s;
+  cursor: pointer;
+}
+
+.placeholder {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sortable:hover {
+  background: $shade-10;
+
+  div {
+    color: $primary-900 !important;
+  }
+}
+
+.sortable-active {
+  div {
+    color: $primary-900 !important;
+  }
+}

@@ -1,0 +1,27 @@
+@import "~common/styles/common/_variables";
+
+.total-count {
+  font-size: 14px;
+  line-height: 18px;
+  color: $shade-60;
+  margin-bottom: 8px;
+}
+
+.header-section {
+  margin-left: 19px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  .add, .import {
+    height: 44px;
+    margin-right: 20px;
+  }
+
+  .search {
+    max-width: 478px;
+    margin: 0 0 0 40px;
+  }
+}

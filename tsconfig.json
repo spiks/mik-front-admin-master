@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "noImplicitAny": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
+    "sourceMap": false,
+    "baseUrl": "src/",
+    "noImplicitThis": true,
+    "module": "esnext",
+    "skipLibCheck": true,
+    "paths": {
+      "app/*": ["app/*"],
+      "common/*": ["common/*"],
+      "services/*": ["services/*"],
+      "stores/*": ["stores/*"]
+    }
+  }
+}

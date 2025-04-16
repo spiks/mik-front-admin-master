@@ -1,0 +1,13 @@
+@import "~common/styles/common/_variables";
+
+.tooltip {
+  background-color: $base2;
+  color: $shade-60;
+  border: 1px solid $shade-60;
+  border-radius: 0;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.32);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: normal;
+  padding: 3px 7px;
+}

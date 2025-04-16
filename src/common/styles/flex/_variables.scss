@@ -1,0 +1,23 @@
+/* ===== Flex Variables ===== */
+
+$flex-direction: (
+        row: row,
+        column: column,
+        row-reverse: row-reverse,
+        column-reverse: column-reverse,
+);
+
+$flex-justify: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        between: space-between,
+        around: space-around,
+);
+
+$flex-align: (
+        start: flex-start,
+        end: flex-end,
+        center: center,
+        stretch: stretch,
+);

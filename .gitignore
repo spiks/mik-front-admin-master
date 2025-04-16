@@ -1,0 +1,26 @@
+.idea/
+node_modules/
+.DS_Store/
+
+public/build/
+public/index.html
+
+config.js
+
+/.cache-loader
+
+### VisualStudioCode ###
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+/.idea
+
+webpack.config.js

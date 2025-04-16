@@ -1,0 +1,53 @@
+/* ===== Text ===== */
+
+/* Text Align */
+
+@each $screen in map-keys($screen-sizes) {
+  @include from-screen-size($screen) {
+    $infix: get-infix($screen);
+
+    .text#{$infix}-left {
+      text-align: left !important;
+    }
+
+    .text#{$infix}-right {
+      text-align: right !important;
+    }
+
+    .text#{$infix}-center {
+      text-align: center !important;
+    }
+  }
+}
+
+/* Text Transformation */
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.text-transform-none {
+  text-transform: none !important;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+/* Text Wrap */
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-break-word {
+  word-wrap: break-word;
+}

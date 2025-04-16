@@ -1,0 +1,10 @@
+@import "~common/styles/common/_variables";
+
+.badge {
+  size: 24px;
+  border-radius: 50%;
+
+  &.small {
+    size: 12px;
+  }
+}

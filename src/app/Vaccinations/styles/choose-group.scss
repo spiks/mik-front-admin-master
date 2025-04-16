@@ -1,0 +1,36 @@
+@import "~common/styles/common/_variables";
+
+.group-cell {
+  transition: background-color 0.2s;
+  background-color: $shade-10;
+  border: 1px solid $shade-30;
+  border-radius: 3.5px;
+  text-align: center;
+
+  &.active {
+    background-color: $primary-300;
+    border-color: $primary-700;
+  }
+
+  &.disabled {
+    color: $shade-40;
+    pointer-events: none;
+  }
+}
+
+.label {
+  width: 100%;
+}
+
+.ru {
+  display: flex;
+  justify-content: center;
+
+  &:after {
+    content: ' ';
+    background: url('~common/icons/flag_russia.svg') center center no-repeat;
+    display: inline-block;
+    width: 28px;
+    margin-left: 6px;
+  }
+}

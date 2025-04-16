@@ -1,0 +1,5 @@
+/* ===== Flex Functions ===== */
+
+@function get-infix($screen) {
+  @return if(map-get($screen-sizes, $screen) == 0, "", "-#{$screen}");
+}

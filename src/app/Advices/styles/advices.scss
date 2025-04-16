@@ -1,0 +1,65 @@
+@import "~common/styles/common/_variables.scss";
+
+.add-advice {
+  height: 113px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px dashed #B1B1B1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: initial;
+  }
+}
+
+.advices-wrapper {
+  min-height: calc(100vh - 198px);
+  position: relative;
+}
+
+.advice-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-height: 113px;
+
+  textarea {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.advice-field {
+  margin: 0;
+}
+
+.advice-remove {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  cursor: pointer;
+  z-index: 100;
+  fill: $red-900;
+}
+
+.submit-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #F6F6F6;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-top: 32px;
+
+  .submit {
+    width: initial;
+  }
+}

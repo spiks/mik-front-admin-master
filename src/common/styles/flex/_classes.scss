@@ -1,0 +1,79 @@
+/* ===== Flex Classes ===== */
+
+/* Flex */
+
+.flex {
+  @include flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Flex Media Classes */
+
+@each $screen in map-keys($screen-sizes) {
+  @include from-screen-size($screen) {
+    $infix: get-infix($screen);
+
+    /* Flex Directions */
+    @each $direction in map-keys($flex-direction) {
+      .flex-direction#{$infix}-#{$direction} {
+        flex-direction: map-get($flex-direction, $direction) !important;
+      }
+    }
+
+    /* Justify Content */
+    @each $justify in map-keys($flex-justify) {
+      .justify-content#{$infix}-#{$justify} {
+        justify-content: map-get($flex-justify, $justify) !important;
+      }
+    }
+
+    /* Align Content */
+    @each $align in map-keys($flex-align) {
+      .align-content#{$infix}-#{$align} {
+        align-content: map-get($flex-align, $align) !important;
+      }
+    }
+
+    /* Align Items */
+    @each $align in map-keys($flex-align) {
+      .align-items#{$infix}-#{$align} {
+        align-items: map-get($flex-align, $align) !important;
+      }
+    }
+
+    /* Align Self */
+    @each $align in map-keys($flex-align) {
+      .align-self#{$infix}-#{$align} {
+        align-self: map-get($flex-align, $align) !important;
+      }
+    }
+
+    /* Flex Orders */
+    @for $i from 0 through 10 {
+      .flex-order#{$infix}-#{$i} {
+        order: $i !important;
+      }
+    }
+
+    /* Flex Grow */
+    @for $i from 0 through 10 {
+      .flex-grow#{$infix}-#{$i} {
+        flex-grow:$i !important;
+      }
+    }
+
+    /* Flex Shrink */
+    @for $i from 0 through 10 {
+      .flex-shrink#{$infix}-#{$i} {
+        flex-shrink:$i !important;
+      }
+    }
+  }
+}

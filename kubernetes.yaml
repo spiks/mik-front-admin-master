@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: front-admin
+  namespace: ${NAMESPACE}
+  labels:
+    app.name: front-admin
+spec:
+  ports:
+    - name: http
+      port: 80
+  selector:
+    app.name: front-admin
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-admin
+  namespace: ${NAMESPACE}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.name: front-admin
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app.name: front-admin
+        app.version: ${VERSION}
+    spec:
+      nodeSelector:
+        app.app: "true"
+      imagePullSecrets:
+        - name: kode-registry-ghcr
+      containers:
+        - name: front-admin
+          image: ${CONTAINER_IMAGE}
+          imagePullPolicy: IfNotPresent

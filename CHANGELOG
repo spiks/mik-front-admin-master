@@ -1,0 +1,615 @@
+Version 1.0.8 | Fri May 06 09:30:48 +0000 2022
+Fixes MIK-992: Hide error `Internet connnection lost` for `check-unred` request (#7)
+
+Co-authored-by: Sergey Syubar <ssyubar@kode-t.ru>
+Version 1.0.7 | Tue Apr 19 09:36:16 +0000 2022
+Fixes MIK-989: Infinite loading for `Posts` page (#6)
+
+Co-authored-by: Sergey Syubar <ssyubar@kode-t.ru>
+Version 1.0.6 | Sat Apr 09 14:59:25 +0000 2022
+Update organization to "redmadrobot-tomsk"
+Version 1.0.5 | Thu Feb 24 04:20:38 +0000 2022
+Fix injection place label (#5)
+Version 1.0.4 | Thu Feb 24 04:02:08 +0000 2022
+Add repeat request in offline (#4)
+Version 1.0.3 | Mon Jan 24 08:40:58 +0000 2022
+Add publish posts (#3)
+Version 1.0.2 | Tue Dec 28 06:49:01 +0000 2021
+Resolves MIK: 928 - Add about page (#2)
+
+* Add page About (without api)
+
+* Add alerts
+
+* Add api
+Version 1.0.1 | Wed Nov 17 09:16:59 +0000 2021
+Setup CI
+Version 1.0.0 | Thu Jul 01 12:42:18 +0000 2021
+Update Ingress
+Version 0.0.47 | Thu Jul 01 12:14:43 +0000 2021
+Add Ingress
+Version 0.0.46 | Tue May 04 10:46:33 +0000 2021
+Setup GitHub CI
+Resolves MIK-886: Has removed aspect ration for story frame. (#1)
+Version 0.0.45 | Fri Dec 25 05:23:32 UTC 2020
+Merge branch 'fixes/mik-883' into 'master'
+
+Fixes MIK-883: Remove line clamp from "support messenger".
+
+Closes MIK-883
+
+See merge request mikrogen/mik_front_admin!47
+Fixes MIK-883: Remove line clamp from "support messenger".
+Version 0.0.44 | Mon Dec 21 06:35:28 UTC 2020
+Merge branch 'fixes/mik-882' into 'master'
+
+Fixes MIK-882: Select field lost data.
+
+Closes MIK-882
+
+See merge request mikrogen/mik_front_admin!46
+Fixes MIK-882: Select field lost data.
+Version 0.0.43 | Thu Aug 20 10:32:51 UTC 2020
+Set explicit mimeType for cropper
+Version 0.0.42 | Wed Aug 19 11:02:37 UTC 2020
+Fix wrong post's validation
+Version 0.0.41 | Mon Aug 17 11:00:04 UTC 2020
+Resolves MIK-871: change validation rule
+Version 0.0.40 | Mon Aug 17 09:08:48 UTC 2020
+Resolves MIK-871: increase limit of article description to 10k
+Version 0.0.39 | Fri Aug 14 07:31:28 UTC 2020
+Resolves MIK-858: show revaccination in once vaccination && add validation for revaccination <= duration
+Fix mistake in vaccinations list
+Version 0.0.38 | Tue Aug 11 10:23:28 UTC 2020
+Merge branch 'feature/mik-848-fields-to-epidemic'
+Resolves MIK-848: add additional fields to epidemic vaccination
+Version 0.0.37 | Tue Aug 11 05:31:26 UTC 2020
+Fix margin in vaccination details
+Version 0.0.36 | Mon Aug 10 10:32:21 UTC 2020
+Fix misstake
+Fix wrong load more logic in vaccination list
+Version 0.0.35 | Fri Aug  7 10:44:44 UTC 2020
+Fix MIK-841: strip pasted content to wysigyg
+Version 0.0.34 | Thu Aug  6 10:40:57 UTC 2020
+Merge branch 'feature/mik-841-wyciwyg'
+Resolves MIK-841: wysiwyg editor
+Version 0.0.33 | Fri Jul 10 07:25:31 UTC 2020
+Resolves MIK-827: Do not send duration with zero days
+Version 0.0.32 | Thu Jul  9 08:35:07 UTC 2020
+Resolves MIK-825: Update fields validation
+Version 0.0.31 | Tue Jun 23 06:52:29 UTC 2020
+Fixes MIK-810: design fixes && fix scroll support table
+Version 0.0.30 | Thu Jun 18 09:25:49 UTC 2020
+Merge branch 'feature/mik-810'
+Resolves MIK-810: add info user modal && fix 0 days recommendation && remove revaccination from once type
+Version 0.0.29 | Thu Jun 11 05:37:13 UTC 2020
+Merge branch 'bug/mik-803-remove-required-vaccination-time'
+Fix a few scrollable bugs
+Version 0.0.28 | Thu Jun 11 04:25:32 UTC 2020
+Merge branch 'bug/mik-803-remove-required-vaccination-time'
+Fixes MIK-803: remove required vaccination time
+Version 0.0.27 | Mon Jun  8 13:38:45 UTC 2020
+Merge branch 'bug/mik-738'
+Fixes MIK-738: auto open cropper
+Version 0.0.26 | Thu Jun  4 11:16:46 UTC 2020
+Add namespace to kubernetes
+Version 0.0.25 | Thu Jun  4 07:31:30 UTC 2020
+Merge branch 'feature/mik-786-design-review'
+Resolves MIK-786: add first kind vaccination's name_display hint
+Resolves MIK-789: make interesting fact not required
+Resolves MIK-786: design review fixes
+Version 0.0.24 | Tue Jun  2 04:43:17 UTC 2020
+Merge branch 'master' of git.kode-t.ru:mikrogen/mik_front_admin
+Version 0.0.23 | Mon Jun  1 11:46:59 UTC 2020
+Resolves MIK-766: Add production
+Merge branch 'bug/mik-785-dynamic-form'
+Fixes MIK-786: set timeout on blur advices input
+Merge branch 'bug/mik-743-network-error'
+Fixes MIK-743: don't show error message when try to send support message with no internet
+Merge branch 'bug/mik-738-cropper'
+Fixes MIK-738: catch cropper upload error && change cropp control's style
+Version 0.0.22 | Thu May 28 07:12:05 UTC 2020
+Fix misstake unionBy
+Version 0.0.21 | Wed May 27 05:16:28 UTC 2020
+Merge branch 'bug/mik-774'
+Merge branch 'mik-744-add-last-message-for-support-list' into 'master'
+
+Fixes MIK-744: add last message to support list
+
+Closes MIK-744
+
+See merge request mikrogen/mik_front_admin!45
+Resolves MIK-774: add gradient color && fix autocomplete
+Fixes MIK-744: add last message to support list
+Version 0.0.20 | Mon May 25 12:54:19 UTC 2020
+Merge branch 'bug/mik-754'
+Fixes MIK-754: autofocus on new reference's items
+Merge branch 'bug/mik-743'
+Fixes MIK-743: add success and error alert messages
+Merge branch 'bug/feature-741'
+Fixes MIK-741, MIK-740: support messages unread status && change formImage object fit to cover
+Merge branch 'bug/feature-738'
+Fixes MIK-738: set prev form field values as empty string
+Merge branch 'feature/mik-739' into 'master'
+
+Fixes MIK-739: Added validation for main image in stories.
+
+Closes MIK-739
+
+See merge request mikrogen/mik_front_admin!44
+Merge branch 'feature/mik-742' into 'master'
+
+Fixes MIK-742: Added max string validation for chat message.
+
+Closes MIK-742
+
+See merge request mikrogen/mik_front_admin!43
+Fixes MIK-739: Added validation for main image in stories.
+Fixes MIK-742: Added max string validation for chat message.
+Merge branch 'bug/mik-737'
+Fixes MIK-737: focus advice on add new && fix bug with deleting new elements
+Merge branch 'bug/mik-736'
+Fixes MIK-736: break long word in support messages
+Merge branch 'bug/mik-735'
+Fixes MIK-735: show full recomendation text
+Merge branch 'bug/mik-755'
+Fixes MIK-755, Fixes MIK-657: Change russian flag from emojji to svg && unselect diseases_risk checkbox when diseases does not have risk disease
+Merge branch 'bug/mik-653'
+Fixes MIK-653: change vaccination's tooltip text
+Merge branch 'bug/mik-644'
+Fixes MIK-644: hide scrollbar in advices on firefox
+Version 0.0.19 | Thu May  7 10:47:42 UTC 2020
+Merge branch 'master' of git.kode-t.ru:mikrogen/mik_front_admin
+Resolves MIK-682: vaccinations design fixes
+Version 0.0.18 | Wed Apr 29 08:10:27 UTC 2020
+Resolves MIK-654: clear name_display when first and once kind picked
+Version 0.0.17 | Tue Apr 28 08:17:32 UTC 2020
+Merge branch 'mik-656-show-notify-on-checkbox-change' into 'master'
+
+Fixes MIK-656: notify if "enabled" checkbox changed
+
+Closes MIK-656
+
+See merge request mikrogen/mik_front_admin!42
+Fixes MIK-656: notify if "enabled" checkbox changed
+Merge branch 'mik-643-hide-scroll-in-advices' into 'master'
+
+Fixes MIK-643: hide scroll in advices
+
+Closes MIK-643
+
+See merge request mikrogen/mik_front_admin!41
+Merge branch 'mik-653-add-tooltip-to-actions' into 'master'
+
+Fixes MIK-653: add tooltip to actions
+
+Closes MIK-653
+
+See merge request mikrogen/mik_front_admin!40
+Merge branch 'mik-649-remove-default-for-vaccination-group' into 'master'
+
+Fixes MIK-649: remove default value for vaccination group
+
+Closes MIK-649
+
+See merge request mikrogen/mik_front_admin!36
+Fixes MIK-643: hide scroll in advices
+Fixes MIK-649: add pointer-events: none
+Fixes MIK-649: remove default value for vaccination group
+Fixes MIK-653: add tooltip to actions
+Merge branch 'feature/mik-646' into 'master'
+
+Fixes MIK-646: Make required image and content fields in post creation.
+
+Closes MIK-646
+
+See merge request mikrogen/mik_front_admin!31
+Merge branch 'master' into feature/mik-646
+
+# Conflicts:
+#	src/app/Posts/PostDetails.tsx
+Merge branch 'feature/mik-655'
+Resolves MIK-655: add revaccination fields
+Merge branch 'feature/mik-658' into 'master'
+
+Fixes MIK-658: Added declensions for vaccination table.
+
+Closes MIK-658
+
+See merge request mikrogen/mik_front_admin!39
+Merge branch 'feature/mik-650' into 'master'
+
+Fixes MIK-650: Added validation for vaccination duration.
+
+Closes MIK-650
+
+See merge request mikrogen/mik_front_admin!38
+Merge branch 'feature/mik-647' into 'master'
+
+Fixes MIK-647: Added maxString length for fields: title, header1, description,...
+
+Closes MIK-647
+
+See merge request mikrogen/mik_front_admin!32
+Merge branch 'feature/mik-645' into 'master'
+
+Fixes MIK-645: Added max length for header and content fields in post creation.
+
+Closes MIK-645
+
+See merge request mikrogen/mik_front_admin!30
+Merge branch 'master' into feature/mik-647
+
+# Conflicts:
+#	src/app/Stories/helpers/validation.ts
+Merge branch 'master' into feature/mik-646
+
+# Conflicts:
+#	src/app/Posts/PostDetails.tsx
+Merge branch 'master' into feature/mik-645
+
+# Conflicts:
+#	src/app/Posts/PostDetails.tsx
+Fixes MIK-650: Code review fixes.
+Fixes MIK-658: Added declensions for vaccination table.
+Merge branch 'mik-657-add-disabled-logic-diseases_risk' into 'master'
+
+Fixes MIK-657: disable diseases_risk if diseases not selected
+
+Closes MIK-657
+
+See merge request mikrogen/mik_front_admin!37
+Merge branch 'mik-640-fix-button-position-in-advices' into 'master'
+
+Fixes MIK-640: remove margin from "add advice" button
+
+Closes MIK-640
+
+See merge request mikrogen/mik_front_admin!35
+Merge branch 'mik-661-add-badge-to-support' into 'master'
+
+Fixes MIK-661: add badge to support
+
+Closes MIK-661
+
+See merge request mikrogen/mik_front_admin!34
+Merge branch 'feature/mik-648' into 'master'
+
+Fixes MIK-648: Added maxString length for fields question and answer in faq.
+
+Closes MIK-648
+
+See merge request mikrogen/mik_front_admin!33
+Merge branch 'feature/mik-642' into 'master'
+
+Fixes MIK-642: Fix sizing of remove advice button.
+
+Closes MIK-642
+
+See merge request mikrogen/mik_front_admin!29
+Merge branch 'feature/mik-641' into 'master'
+
+Fixes MIK-641: Added advices validation.
+
+Closes MIK-641
+
+See merge request mikrogen/mik_front_admin!28
+Fixes MIK-650: Added validation for vaccination duration.
+Version 0.0.16 | Mon Apr 27 05:01:41 UTC 2020
+Fixes MIK-657: disable diseases_risk if diseases not selected
+Merge branch 'master' of git.kode-t.ru:mikrogen/mik_front_admin
+Fix build errors
+Fixes MIK-640: remove margin from "add advice" button
+Fixes MIK-661: add badge to support
+Version 0.0.15 | Fri Apr 24 10:58:24 UTC 2020
+Merge branches 'master' and 'master' of git.kode-t.ru:mikrogen/mik_front_admin
+Fix build speed
+Fixes MIK-648: Added maxString length for fields question and answer in faq.
+Version 0.0.14 | Fri Apr 24 10:37:46 UTC 2020
+Resolves MIK-660: scroll to form errors
+
+# Conflicts:
+#	src/common/components/chipsAutocomplete/AsyncChipsAutocomplete.tsx
+Fixes MIK-647: Added maxString length for fields: title, header1, description, action_text in stories creation page.
+Fixes MIK-646: Make required image and content fields in post creation.
+Fixes MIK-645: Added max length for header and content fields in post creation.
+Fixes MIK-642: Fix sizing of remove advice button.
+Fixes MIK-641: Added advices validation.
+Add build optimization loaders
+Merge branch 'feature/mik-620' into 'master'
+
+Resolves MIK-620: Refactor autocomplete.
+
+Closes MIK-620
+
+See merge request mikrogen/mik_front_admin!27
+Fixes MIK-620: Code review fixes.
+Resolves MIK-620: Refactor autocomplete.
+Version 0.0.13 | Wed Apr 22 10:05:34 UTC 2020
+Merge branch 'mik-623-duplication-of-support-messages' into 'master'
+
+Fixes MIK-623: changed method for checking unique messages
+
+Closes MIK-623
+
+See merge request mikrogen/mik_front_admin!26
+Add scroll to error form
+Fixes MIK-623: changed method for checking unique messages
+Fixes MIK-623: changed method for checking unique messages
+Merge branch 'mik-608-fix-chat-scroll' into 'master'
+
+Fixes MIK-608: fix chat scroll
+
+Closes MIK-608
+
+See merge request mikrogen/mik_front_admin!25
+Fixes MIK-608: review fixes
+Fix routes
+Fixes MIK-608: fix chat scroll
+Version 0.0.12 | Wed Apr 22 05:52:46 UTC 2020
+Merge branch 'feature/mik-606-document-link-error'
+Resolves MIK-606: document link error
+Fixes MIK-608: fix chat scroll
+Version 0.0.11 | Tue Apr 21 10:08:03 UTC 2020
+Merge branch 'feature/mik-155-vaccination-validation'
+Fix copy vaccination
+Merge branch 'feature/mik-155-vaccination-validation'
+Don't send zero duration
+Merge branch 'feature/mik-155-vaccination-validation'
+Resolves MIK-155: vaccination validation
+Merge branch 'mik-607-fix-preview' into 'master'
+
+Fixes MIK-607: add cover style to img preview
+
+Closes MIK-607
+
+See merge request mikrogen/mik_front_admin!24
+Merge branch 'mik-603-add-search-to-advices' into 'master'
+
+Resolves MIK-603: add search to advices
+
+Closes MIK-603
+
+See merge request mikrogen/mik_front_admin!23
+Fixes MIK-607: add cover style to img preview
+Resolves MIK-603: add search to advices
+Version 0.0.10 | Thu Apr 16 11:48:22 UTC 2020
+Merge branch 'feature/mik-155-vaccination-groups'
+Merge commit '832be8dde3ac65783a58e6ad42ff7fe0228cdb6d' into feature/mik-155-vaccination-groups
+
+# Conflicts:
+#	src/app/Vaccinations/VaccinationDetails.tsx
+Add date range
+Resolves MIK-582: Added async autocomplete for decease
+Resolves MIK-582: Fix errors
+Merge branch 'feature/mik-155-vaccination-groups'
+Add vaccination groups
+Resolves MIK-582: Review fixes
+Resolves MIK-582: Added AsyncChipsAutocomplete
+Resolves MIK-584: Added FormAsyncChipsAutocomplete
+Resolves MIK-581: Added SyncChipsAutocomplete
+Resolves MIK-583: Added FormSyncChipsAutocomplete
+Merge branch 'feature/mik-526' into 'master'
+
+Resolves MIK-526: Change password
+
+Closes MIK-526
+
+See merge request mikrogen/mik_front_admin!9
+Version 0.0.9 | Wed Apr 15 05:17:48 UTC 2020
+Resolves MIK-526: Review fixes
+Resolves MIK-526: Set fixed
+Resolves MIK-526: Delete disabling of button submit
+Resolves MIK-526: Review fixes
+Resolves MIK-526: Review fixes
+Resolves MIK-526: Change password
+Merge branch 'mik-158-support' into 'master'
+
+Resolves MIK-158: Support list and chat
+
+Closes MIK-158
+
+See merge request mikrogen/mik_front_admin!19
+Version 0.0.8 | Tue Apr 14 12:39:15 UTC 2020
+Merge branch 'feature/mik-155-vaccinations-details'
+Init MIK-155: vaccination details
+Resolves MIK-158: Support list and chat
+Resolves MIK-158: Support list and chat
+Merge branch 'mik-154-references-support-topics' into 'master'
+
+Resolves MIK-154: References - Support Topics
+
+Closes MIK-154
+
+See merge request mikrogen/mik_front_admin!20
+Merge branch 'feature/mik-544' into 'master'
+
+Resolves MIK-544: document file upload button
+
+Closes MIK-544
+
+See merge request mikrogen/mik_front_admin!17
+Resolves MIK-544: Ui fixes
+Version 0.0.7 | Tue Apr 14 04:52:52 UTC 2020
+Merge branch 'mik-154-references-hobbies' into 'master'
+
+Resolves MIK-154: References - Hobbies
+
+Closes MIK-154
+
+See merge request mikrogen/mik_front_admin!18
+Merge branch 'feature/mik-155-vaccinations'
+Init vaccinations
+Resolves MIK-154: References - Support Topics
+Resolves MIK-154: References - Hobbies
+Merge branch 'mik-154-references-activities' into 'master'
+
+Resolves MIK-154: References - Activities
+
+Closes MIK-154
+
+See merge request mikrogen/mik_front_admin!15
+Resolves MIK-154: References - Activities
+Fix imports
+Resolves MIK-544: document file upload button
+Merge branch 'feature/mik-565' into 'master'
+
+Resolves MIK-565: Added logout modal
+
+Closes MIK-565
+
+See merge request mikrogen/mik_front_admin!16
+Merge branch 'mik-154-references-countries' into 'master'
+
+Resolves MIK-154: References - Countries
+
+Closes MIK-154
+
+See merge request mikrogen/mik_front_admin!14
+Resolves MIK-565: Added logout modal
+Resolves MIK-154: References - Countries
+Version 0.0.6 | Fri Apr 10 08:37:55 UTC 2020
+Merge branch 'feature/mik-151-stories-details' into 'master'
+
+Resolves MIK-151: story details page
+
+Closes MIK-151
+
+See merge request mikrogen/mik_front_admin!12
+Codereview fixes
+Merge branch 'mik-154-references-regions' into 'master'
+
+Resolves MIK-154: References - Regions
+
+Closes MIK-154
+
+See merge request mikrogen/mik_front_admin!13
+Resolves MIK-154: References - Regions
+Initial text color to uppercase
+Fix wrong calculate active tab's underline
+Resolves MIK-151: story details page
+Merge branch 'mik-154-references' into 'master'
+
+Fixes MIK-154: Redirect to default route if there is no match
+
+Closes MIK-154
+
+See merge request mikrogen/mik_front_admin!11
+Fixes MIK-154: Redirect to default route if there is no match
+Merge branch 'mik-154-references' into 'master'
+
+Fixes MIK-154: Reference active tab matcher must not ignore default state value
+
+Closes MIK-154
+
+See merge request mikrogen/mik_front_admin!10
+Fixes MIK-154: Remove unused props from References FC
+Fixes MIK-154: References active tab matcher
+Merge branch 'mik-154-references' into 'master'
+
+Resolves MIK-154: References - Diseases
+
+Closes MIK-154
+
+See merge request mikrogen/mik_front_admin!8
+Resolves MIK-154: Use Grid for details
+Resolves MIK-154: Trim row values
+Resolves MIK-154: Update import csv format
+Resolves MIK-154: Add diseases
+Merge branch 'mik-152-posts-managment' into 'master'
+
+Resolves MIK-152: Posts management
+
+Closes MIK-152
+
+See merge request mikrogen/mik_front_admin!6
+Resolves MIK-152: add image field
+Resolves MIK-152: add image field
+Resolves MIK-152: Posts management
+Merge branch 'feature/mik-151-stories-page'
+Fix merge troubles && add FormImage component
+Merge branch 'mik-157-faq' into 'master'
+
+Resolves MIK-157: FAQ management
+
+Closes MIK-157
+
+See merge request mikrogen/mik_front_admin!3
+Resolves MIK-157: review fixes
+Resolves MIK-157: review fixes
+Resolves MIK-157: fix import path for ActionColumn
+Resolves MIK-157: change textarea row to 10
+Resolves MIK-157: FAQ management
+Merge branch 'mik-483-documents' into 'master'
+
+Resolves MIK-483: References template; Documents
+
+Closes MIK-483
+
+See merge request mikrogen/mik_front_admin!4
+Fixes MIK-483: Shorten code
+Fixes MIK-483: Code review
+Resolves MIK-483: Limit form width
+Fixes MIK-483: Fix typo
+Merge branch 'master' into mik-483-documents
+
+# Conflicts:
+#	src/app/App/Layout.tsx
+Resolves MIK-483: Add file upload element
+Merge branch 'mik-156-advices' into 'master'
+
+Resolves MIK-157: Advices management
+
+Closes MIK-157
+
+See merge request mikrogen/mik_front_admin!5
+Fixes MIK-483: Update IDE formatter & reformat code
+Resolves MIK-483: Add base UrlFileField
+Resolves MIK-157: Advices management
+Resolves MIK-483: Prepare document details
+Merge branch 'master' into mik-483-documents
+
+# Conflicts:
+#	src/app/App/Layout.tsx
+#	src/common/components/button/Button.tsx
+Resolves MIK-483: References template; Documents list/delete
+Merge branch 'feature/mik-533-stories-page'
+Merge branch 'master' of git.kode-t.ru:mikrogen/mik_front_admin
+Resolves MIK-533: init stories list
+Add user role restrictions
+Version 0.0.5 | Fri Apr  3 08:40:33 UTC 2020
+Merge branch 'mik-507-add-interfaces-for-api-requests-and-models' into 'master'
+
+Resolves MIK-507: add Regions/Stories/Posts
+
+Closes MIK-507
+
+See merge request mikrogen/mik_front_admin!2
+Resolves MIK-153: users page
+Resolves MIK-507: add other entities
+Resolves MIK-507: add Regions/Stories/Posts
+Merge branch 'feature/mik-153-users-page'
+Resolves MIK-153: change base project components && init users page
+Version 0.0.4 | Tue Mar 31 12:58:19 UTC 2020
+Replace {env}.NODE_ENV, {env}.SENTRY_ENV, {env}.API_URL etc to NODE_ENV, SENTRY_ENV, API_URL
+Version 0.0.3 | Tue Mar 31 04:53:30 UTC 2020
+Fix few bugs
+Version 0.0.2 | Mon Mar 30 07:41:32 UTC 2020
+Merge branch 'feature/mik-150-auth-reset-404'
+Resolves MIK-150: auth, reset pass, 404 page
+Merge branch 'feature/mik-413' into 'master'
+
+Resolves MIK-413: Added inputs
+
+Closes MIK-413
+
+See merge request mikrogen/mik_front_admin!1
+Conflicts
+Update Layout.tsx
+Resolves MIK-413: error fix
+Resolves MIK-413: added autocomplete
+Resolves MIK-150: login form
+Resolves MIK-413: added styles for inputs
+Resolves MIK-429: main layout
+Add base code
+Initial commit

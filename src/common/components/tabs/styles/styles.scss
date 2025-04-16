@@ -1,0 +1,33 @@
+@import "~common/styles/common/_variables";
+
+.indicator {
+  background-color: $primary-700;
+  height: 4px;
+  border-radius: 4px;
+}
+
+.root {
+  min-height: 43px;
+}
+
+.tab {
+  color: $shade-40;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  line-height: 16px;
+  padding: 9.5px 16px;
+  min-width: 100px;
+  min-height: initial;
+  max-width: initial;
+  opacity: 1;
+
+  &-selected {
+    color: $primary-900;
+  }
+
+  &:hover {
+    color: $primary-900;
+  }
+}

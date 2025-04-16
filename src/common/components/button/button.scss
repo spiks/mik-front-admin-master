@@ -1,0 +1,164 @@
+@import "~common/styles/common/_variables";
+
+.button {
+  padding: 9.5px 16px;
+  border-radius: 4px;
+  background: $primary-900;
+  box-shadow: none !important;
+  min-width: 120px;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  text-transform: uppercase;
+
+  .content {
+    color: white
+  }
+
+  &:hover {
+    background-color: $primary-700;
+  }
+
+  &:active {
+    background-color: $primary-900;
+  }
+
+  &.text, &.outlined {
+    background-color: white;
+
+    .content {
+      color: $primary-900;
+    }
+
+    &:hover {
+      background-color: $primary-300;
+    }
+
+    &:active {
+      background-color: $primary-500;
+    }
+  }
+
+  &.outlined {
+    border: 1px solid $primary-500;
+  }
+
+  &.icon, &.loading {
+    padding: 9px 12px;
+
+    .content {
+      display: flex;
+      align-items: center;
+
+      .content-icon path {
+        fill: $primary-900;
+      }
+    }
+  }
+
+  &.disabled {
+    border: none;
+    background-color: transparent;
+
+    .content {
+      color: $shade-40;
+    }
+
+    svg path {
+      fill: $shade-40;
+    }
+  }
+
+  &.loading {
+    background-color: $primary-300;
+
+    &.text {
+      background-color: transparent;
+    }
+
+    &.outlined, &.icon {
+      border: 1px solid $primary-500;
+      background-color: transparent;
+    }
+
+    .loader-icon {
+      color: $primary-700;
+    }
+  }
+
+  &.red {
+    background-color: $red-900;
+
+    &:hover {
+      background-color: $red-700;
+    }
+
+    &:active {
+      background-color: $red-900;
+    }
+
+    &.text, &.outlined {
+      background-color: transparent;
+
+      .content {
+        color: $red-900;
+      }
+
+      &:hover {
+        background-color: $red-200;
+      }
+
+      &:active {
+        background-color: $red-300;
+      }
+    }
+
+    &.icon .content-icon path {
+      fill: $red-900;
+    }
+
+    &.outlined {
+      border: 1px solid $red-700;
+    }
+
+    &.disabled {
+      border: none;
+      background-color: transparent;
+
+      .content {
+        color: $red-300;
+      }
+
+      svg path {
+        fill: $red-300;
+      }
+    }
+
+    &.loading {
+      background-color: $red-700;
+      color: $red-700;
+
+      &.text {
+        background-color: transparent;
+      }
+
+      &.outlined, &.icon {
+        border: 1px solid $red-700;
+        background-color: transparent;
+      }
+
+      .loader-icon {
+        color: $red-300;
+      }
+    }
+
+  }
+}
+
+.content-icon, .loader-icon {
+  size: 18px !important;
+  margin-right: 8px;
+}
+
+.loader-icon {
+  color: $primary-500;
+}

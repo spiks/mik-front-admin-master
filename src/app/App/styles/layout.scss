@@ -1,0 +1,82 @@
+@import "~common/styles/common/_variables";
+@import "~common/styles/common/_mixins";
+
+$sidebarWidth: 250;
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-width: 1440px;
+}
+
+.sidebar {
+  width: $sidebarWidth + px;
+  position: relative;
+
+  &-paper {
+    background-color: $shade-10;
+    padding: 40px 32px;
+    box-sizing: border-box;
+    min-height: 610px;
+    border-right: none;
+
+    @include upto-screen-size(sm) {
+      position: absolute;
+    }
+  }
+
+  .link {
+    margin-right: -32px;
+    margin-left: -32px;
+    padding: 15px 32px;
+    position: relative;
+
+    &:hover {
+      background-color: $primary-300;
+    }
+
+    &.link-active {
+      background-color: $primary-500;
+
+      &:before {
+        content: ' ';
+        display: block;
+        margin: auto 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 11px;
+        height: 10px;
+        width: 13px;
+        background: url('~common/icons/arrow_to_right.svg') no-repeat center;
+      }
+    }
+  }
+
+  .footer-action {
+    color: $shade-40;
+
+    &-active {
+        color: $primary-900;
+    }
+  }
+
+  .username {
+    max-width: 170px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
+    display: inline-block;
+  }
+}
+
+.content-wrapper {
+  padding: 48px 32px;
+  box-sizing: border-box;
+}
+
+.logout {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}

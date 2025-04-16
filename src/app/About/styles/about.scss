@@ -1,0 +1,11 @@
+@import "~common/styles/common/_variables.scss";
+
+
+.about-wrapper {
+  min-height: calc(100vh - 198px);
+  position: relative;
+}
+
+.about-wrapper-textArea {
+  width: 756px;
+}

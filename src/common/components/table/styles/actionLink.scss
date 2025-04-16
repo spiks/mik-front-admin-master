@@ -1,0 +1,29 @@
+@import "~common/styles/common/_variables";
+
+.action-link {
+  padding-bottom: 2px;
+  color: $primary-900;
+  cursor: pointer;
+  transition: border-bottom-color 0.1s ease-in-out;
+  border-bottom: 1px solid transparent;
+
+  svg {
+    fill: $primary-900
+  }
+
+  &:hover {
+    border-bottom-color: $primary-700;
+  }
+
+  &.red {
+    color: $red-900;
+
+    svg {
+      fill: $red-900
+    }
+
+    &:hover {
+      border-bottom-color: $red-700;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "~common/styles/common/_variables";
+
+.btn-add {
+  margin-bottom: 48px;
+}
+
+.activity {
+  align-items: start;
+
+  & + .activity {
+    margin-top: 32px;
+  }
+
+  .input {
+    margin: 0
+  }
+}

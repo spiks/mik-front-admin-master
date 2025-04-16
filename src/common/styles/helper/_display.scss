@@ -1,0 +1,39 @@
+/* ===== Display ===== */
+
+@each $screen in map-keys($screen-sizes) {
+  @include from-screen-size($screen) {
+    $infix: get-infix($screen);
+
+    .display#{$infix}-none {
+      display: none !important;
+    }
+
+    .display#{$infix}-inline {
+      display: inline !important;
+    }
+
+    .display#{$infix}-inline-block {
+      display: inline-block !important;
+    }
+
+    .display#{$infix}-block {
+      display: block !important;
+    }
+
+    .display#{$infix}-table {
+      display: table !important;
+    }
+
+    .display#{$infix}-table-cell {
+      display: table-cell !important;
+    }
+
+    .display#{$infix}-flex {
+      display: flex !important;
+    }
+
+    .display#{$infix}-inline-flex {
+      display: inline-flex !important;
+    }
+  }
+}

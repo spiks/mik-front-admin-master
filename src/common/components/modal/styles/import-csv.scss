@@ -1,0 +1,59 @@
+@import "~common/styles/common/_variables";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .upload-area {
+    position: relative;
+    margin-top: 24px;
+
+    input[type=file] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+
+    .file-info {
+      display: flex;
+
+      .name {
+        display: flex;
+        border-radius: 4px;
+        padding: 18px 24px;
+        color: $base1;
+        background-color: $primary-400;
+        align-items: center;
+
+        .icon {
+          margin-right: 12px;
+          width: 16px;
+
+          path {
+            fill: $primary-600;
+          }
+        }
+      }
+
+      button.btn-delete {
+        padding: 0;
+        margin: 17px 0 17px 21px;
+        outline: none;
+        border: none;
+        line-height: 1;
+
+        svg > path {
+          fill: $red-900;
+        }
+      }
+    }
+  }
+
+  .btn-confirm {
+    margin-top: 32px;
+  }
+}

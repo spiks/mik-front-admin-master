@@ -1,0 +1,5 @@
+[production]
+defaults
+
+[development]
+last 2 Chrome versions

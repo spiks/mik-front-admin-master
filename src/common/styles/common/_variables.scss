@@ -1,0 +1,49 @@
+/* ===== Grig ===== */
+
+$gutter:                  24 !default;
+$columns:                 12 !default;
+
+$screen-sizes: (
+  xs: 0,
+  sm: 559,
+  md: 768,
+  lg: 1440 + $gutter * 2, // content should be min 1080px + gutter on both sides
+  //xl: 1440
+) !default;
+
+/* ===== Colors ===== */
+
+/* Base Colors */
+
+$base1:                   #363636 !default;
+$base2:                   #FFFFFF !default;
+$red-900:                 #FF4040 !default;
+$red-700:                 #F58686 !default;
+$red-300:                 #FFDADA !default;
+$red-200:                 #FFEBEB !default;
+
+$shade-10:                #F9F9F9 !default;
+$shade-20:                #F2F2F2 !default;
+$shade-30:                #E2E2E2 !default;
+$shade-40:                #A9A9A9 !default;
+$shade-60:                #757575 !default;
+
+$primary-900:             #23AEA3 !default;
+$primary-700:             #2EC8BC !default;
+$primary-600:             #8EDFD9 !default;
+$primary-500:             #D3EFED !default;
+$primary-400:             #E9FAF8 !default;
+$primary-300:             #EBFAF9 !default;
+
+$secondary-900:           #81A0FF !default;
+$secondary-700:           #B3C6FF !default;
+$secondary-500:           #E5ECFF !default;
+
+  /* ===== Typography ===== */
+$default-text-color:      $base1 !default;
+
+$body-font-family:        'Roboto' !default;
+$body-line-height:        24px !default;
+$body-text-color:         $default-text-color;
+$body-background-color:   $base2 !default;
+$body-font-size:          16px !default;

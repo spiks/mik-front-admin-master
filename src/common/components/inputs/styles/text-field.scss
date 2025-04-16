@@ -1,0 +1,56 @@
+@import "~common/styles/common/_variables";
+
+.text-field-root {
+  background-color: white;
+  margin: 0;
+
+  &.disabled {
+    background-color: $shade-10;
+    color: $shade-30;
+
+    .text-field-outline {
+      border-color: $shade-30;
+    }
+  }
+}
+
+.text-field-outline {
+  border: 1px solid $shade-30;
+}
+
+
+.text-field-error {
+  .text-field-outline {
+    border: 2px solid $red-900 !important;
+  }
+}
+
+.label-root {
+  &.label-required {
+    &::after {
+      content: "*";
+      color: $red-900;
+    }
+  }
+
+  &.disabled {
+    color: $shade-30;
+  }
+}
+
+.text-field-focused svg {
+  fill: $primary-900;
+}
+
+.label-outlined {
+  color: $shade-40;
+}
+
+.search-input {
+  padding: 17.5px 0;
+}
+
+.search-root {
+  margin-top: 0;
+  margin-bottom: 0;
+}

@@ -1,0 +1,80 @@
+@import "~common/styles/common/_variables";
+
+.text-base {
+  white-space: pre-line;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  &.no-line-clamp {
+    display: initial;
+    -webkit-line-clamp: initial;
+    -webkit-box-orient: initial;
+    overflow: initial;
+  }
+}
+
+.h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.body {
+  font-size: 16px;
+  line-height: 24px;
+
+  &.bold {
+    line-height: 22px;
+    font-weight: bold;
+  }
+}
+
+.footnote {
+  font-size: 12px;
+  line-height: 14px;
+
+  &.bold {
+    font-weight: bold;
+  }
+}
+
+.button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+}
+
+.caption {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.required {
+  &::after {
+    content: "*";
+    color: $red-900;
+  }
+}
+
+.ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+  white-space: pre-line;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}

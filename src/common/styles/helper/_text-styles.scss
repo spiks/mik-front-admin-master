@@ -1,0 +1,63 @@
+/* ===== Font Sizes ===== */
+
+/* Variables */
+
+$font-sizes: 12, 16, 17, 18, 20, 22, 24, 30, 48;
+
+/* Classes */
+
+@each $font in $font-sizes {
+  .font-#{$font} {
+    font-size: $font * 1px !important;
+  }
+}
+
+.text-display {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.text-header {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.text-title {
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.text-title-bold {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.text-body {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.text-body-regular {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-body-bold {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.text-button {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.text-caption {
+  font-size: 12px;
+  line-height: 15px;
+}

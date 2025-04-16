@@ -1,0 +1,47 @@
+/* ===== Color ===== */
+
+/* Variables */
+
+$colors: (
+        base-1: $base1,
+        base-2: $base2,
+        red-900: $red-900,
+        shade-10: $shade-10,
+        shade-20: $shade-20,
+        shade-30: $shade-30,
+        shade-40: $shade-40,
+        shade-60: $shade-60,
+        primary-900: $primary-900,
+        primary-700: $primary-900,
+        primary-500: $primary-900,
+        primary-300: $primary-900,
+        secondary-900: $primary-900,
+        secondary-700: $primary-900,
+        secondary-500: $primary-900,
+) !default;
+
+/* Background Color Classes */
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+}
+
+/* Text Color Classes */
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+}
+
+/* Svg Path Color Classes */
+
+@each $name, $color in $colors {
+  .path-#{$name} {
+    path {
+      fill: $color;
+    }
+  }
+}

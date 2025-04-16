@@ -1,0 +1,15 @@
+@import "~common/styles/common/_variables";
+
+.dropzone {
+  padding: 68px 0;
+  margin: 0 auto;
+  border: 1px dashed $shade-30;
+
+  &.is-drag-active {
+    border-color: $primary-900;
+  }
+
+  &.hasError {
+    border-color: $red-900;
+  }
+}

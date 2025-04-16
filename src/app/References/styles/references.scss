@@ -1,0 +1,7 @@
+.btn-delete {
+  margin: 16px 0 0 16px;
+
+  &.disabled {
+    pointer-events: none;
+  }
+}

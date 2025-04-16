@@ -1,0 +1,44 @@
+@import "~common/styles/common/_variables";
+
+:global {
+  .cropper-bg {
+    background-image: none;
+  }
+
+  .cropper-view-box {
+    outline: 2px dashed rgba(246, 246, 246, .6);
+    opacity: .1;
+  }
+
+  .cropper-crop-box {
+    z-index: 1;
+  }
+
+  .cropper-line {
+    background-color: transparent;
+  }
+
+  .cropper-canvas {
+    &:before {
+      display: block;
+      content: '';
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      background-color: $shade-60;
+      opacity: .45;
+    }
+  }
+
+  .cropper-point {
+    size: 10px !important;
+    background-color: #C4C4C4;
+  }
+
+  .cropper-modal {
+    display: none;
+  }
+}

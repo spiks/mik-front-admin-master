@@ -1,0 +1,17 @@
+@import "~common/styles/common/_variables";
+
+.icon {
+  margin-right: 18px;
+
+  &.success {
+    fill: $primary-900;
+  }
+
+  &.info {
+    fill: $secondary-900;
+  }
+
+  &.error {
+    fill: $red-900;
+  }
+}

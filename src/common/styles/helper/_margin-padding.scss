@@ -1,0 +1,51 @@
+@import "../common/_mixins.scss";
+
+/* ===== Margin and Padding ===== */
+
+/* Variables */
+
+$margin-padding: 0, 2, 3, 4, 5, 6, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 24, 25, 26, 28, 30, 32, 35, 36, 40, 45, 48, 50, 52, 55, 56, 60, 64, 65, 66, 70, 72, 75, 80, 85, 90, 95;
+
+$margins: (
+  m:  margin,
+  mt: margin-top,
+  ml: margin-left,
+  mr: margin-right,
+  mb: margin-bottom
+);
+
+$paddings: (
+  p:  padding,
+  pt: padding-top,
+  pl: padding-left,
+  pr: padding-right,
+  pb: padding-bottom
+);
+
+/* Mixins */
+
+@mixin calc-margin-padding($class, $property) {
+  @each $number in $margin-padding {
+    .#{$class}-#{$number} {
+      #{$property}: $number + px !important;
+    }
+  }
+}
+
+/* Classes */
+
+@each $screen in map-keys($screen-sizes) {
+  @include from-screen-size($screen) {
+    $infix: get-infix($screen);
+
+    /* Margin Classes */
+    @each $class, $property in $margins {
+      @include calc-margin-padding($class + $infix, $property);
+    }
+
+    /* Padding Classes */
+    @each $class, $property in $paddings {
+      @include calc-margin-padding($class + $infix, $property);
+    }
+  }
+}

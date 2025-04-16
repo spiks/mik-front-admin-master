@@ -1,0 +1,23 @@
+@import "~common/styles/common/_variables";
+@import "~common/components/text/text.scss";
+
+.checkbox-wrapper {
+  span:last-child {
+    color: $shade-60;
+  }
+  &.disabled {
+    opacity: 0.24;
+  }
+}
+
+.color-primary {
+  &.checked {
+    color: $primary-900
+  }
+}
+
+.root {
+  color: $shade-40;
+}
+
+

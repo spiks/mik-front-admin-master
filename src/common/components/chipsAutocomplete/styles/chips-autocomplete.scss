@@ -1,0 +1,16 @@
+@import "~common/styles/common/_variables";
+
+.autocomplete-root {
+  width: 100%;
+}
+
+.autocomplete-input {
+  padding: 18.5px 14px 18.5px 0 !important;
+  max-width: calc(100% - 80px);
+
+  &-focused {
+    .input-icon svg path {
+      fill: $primary-900;
+    }
+  }
+}

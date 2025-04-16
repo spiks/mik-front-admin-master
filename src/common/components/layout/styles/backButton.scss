@@ -1,0 +1,19 @@
+@import "~common/styles/common/_variables";
+
+.back-button {
+  color: $shade-60;
+  transition: 0.1s color ease-in-out;
+  cursor: pointer;
+
+  svg {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    color: $primary-900;
+    path {
+      transition: 0.1s all ease-in-out;
+      stroke: $primary-900;
+    }
+  }
+}

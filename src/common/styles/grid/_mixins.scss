@@ -1,0 +1,49 @@
+/* ===== Grid Mixins ===== */
+
+/* Grid Container Mixin */
+
+@mixin container($gutter: $gutter) {
+  margin: 0 auto;
+  padding: 0 $gutter + px;
+  max-width: 100%;
+
+  @each $screen in map-keys($screen-sizes) {
+    @include from-screen-size($screen) {
+      @if map-get($screen-sizes, $screen) != 0 {
+        max-width: map-get($screen-sizes, $screen) + px;
+      }
+    }
+  }
+}
+
+/* Grid Row Mixin */
+
+@mixin row($gutter: $gutter) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$gutter + px;
+  margin-right: -$gutter + px;
+}
+
+/* Grid Column Mixin */
+
+@mixin calc-grid-columns($gutter: $gutter, $columns: $columns) {
+  .column {
+    //padding-left: $gutter + px;
+    //padding-right: $gutter + px;
+    flex-grow: 1;
+    max-width: 100%;
+
+    @each $screen in map-keys($screen-sizes) {
+
+      @for $i from 1 through $columns {
+        &.#{$screen}-#{$i} {
+          @include from-screen-size($screen) {
+            flex: 0 0 percentage(($i / $columns));
+            max-width: percentage(($i / $columns));
+          }
+        }
+      }
+    }
+  }
+}
